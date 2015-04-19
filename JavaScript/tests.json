@@ -1,0 +1,17 @@
+{
+  "Valid Parentheses": {
+    "entryPoint": "isValid",
+    "specs": [
+      {
+        "id": 1,
+        "input": "()",
+        "expect": true
+      },
+      {
+        "id": 2,
+        "input": "([)]",
+        "expect": false
+      }
+    ]
+  }
+}

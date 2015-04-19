@@ -1,0 +1,15 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "description": "Utility for testing problems solutions before submit to LeedCode",
+  "main": "runner.js",
+  "dependencies": {
+    "lodash": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
