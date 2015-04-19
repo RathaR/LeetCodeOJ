@@ -1,0 +1,8 @@
+{
+ "entryPoint" : "hammingWeight",
+  "specs": [{
+   "id": 1,
+   "input": 11,
+   "expect": 3
+  }]
+}
