@@ -1,21 +1,19 @@
 var _ = require('lodash');
-var tests = require('./tests');
 var loader = require('./solution-loader');
 
 var arguments = process.argv.slice(2);
 
-var problemsList = [];
-if (arguments.length > 0) {
-    problemsList = arguments;
-} else {
-    problemsList = _.keys(tests);
-}
-_.forEach(problemsList, function (problemId) {
-    var testInfo = tests[problemId];
-    var solution = loader.load(problemId);
+var problemsList = loader.loadAll();
+//var problemsList = [];
+//if (arguments.length > 0) {
+//    problemsList = arguments;
+//} else {
+//    problemsList = _.keys(tests);
+//}
+_.forEach(problemsList, function (solution, problemId) {
     var entryPoint = testInfo.entryPoint;
     var problemSpecs = testInfo.specs;
-    console.log('start executing tests for : ' + problemId);
+    console.log('start executing tests for : ' + problem);
     console.log('entry point: ' + entryPoint);
     _.forEach(problemSpecs, function (spec) {
         console.log('test id : ' + spec.id);
