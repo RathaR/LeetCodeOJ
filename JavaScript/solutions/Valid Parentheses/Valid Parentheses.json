@@ -2,12 +2,12 @@
  "entryPoint" : "isValid",
   "specs": [{
     "id": 1,
-    "input": "()",
+    "input": "'()'",
     "expect": true
    },
    {
     "id": 2,
-    "input": "([)]",
+    "input": "'([)]'",
     "expect": false
    }]
 }

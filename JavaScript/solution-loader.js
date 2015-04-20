@@ -31,7 +31,7 @@ Solution.prototype.run = function (input) {
     (function () {
         with (evaluationContext) {
             eval(self.code);
-            result = eval(self.entryPoint + '(\'' + input + '\');')
+            result = eval(self.entryPoint + '(' + input + ');')
         }
     })();
     return result;
